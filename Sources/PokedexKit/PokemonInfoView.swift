@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct PokemonInfoView: View {
-    let pokemon: Pokemon
-    var body: some View {
+public struct PokemonInfoView: View {
+    public let pokemon: Pokemon
+    public var body: some View {
         SpecificationsView(pokemon: pokemon)
         WeaknessView(pokemon: pokemon)
         StrengthView(pokemon: pokemon)
