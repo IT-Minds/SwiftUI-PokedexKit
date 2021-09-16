@@ -8,6 +8,10 @@
 import SwiftUI
 
 public struct PokemonInfoView: View {
+    public init(pokemon: Pokemon) {
+        self.pokemon = pokemon
+    }
+    
     public let pokemon: Pokemon
     public var body: some View {
         SpecificationsView(pokemon: pokemon)
