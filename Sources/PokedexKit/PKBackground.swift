@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-public struct PDBackground: View {
+public struct PKBackground: View {
     
     @State private var size: CGSize = .zero
     
-    let catched: Bool
+    let caught: Bool
     
-    public init(catched: Bool) {
-        self.catched = catched
+    public init(caught: Bool) {
+        self.caught = caught
     }
     
     public var body: some View {
         ZStack {
-            if catched {
+            if caught {
                 Circle()
                     .trim(from: 0.0, to: 0.5)
                     .fill(Color.white)
@@ -60,6 +60,6 @@ public struct PDBackground: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        PDBackground(catched: true)
+        PKBackground(caught: true)
     }
 }

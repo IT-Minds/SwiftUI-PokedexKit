@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct PokemonInfoView: View {
+public struct PKInfoView: View {
     public init(pokemon: Pokemon) {
         self.pokemon = pokemon
     }

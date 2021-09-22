@@ -12,7 +12,7 @@ import URLImageStore
 let urlImageService = URLImageService(fileStore: nil, inMemoryStore: URLImageInMemoryStore())
 
 
-public struct AsyncImage<Content: View>: View {
+public struct PKAsyncImage<Content: View>: View {
     
     let url: URL
     @ViewBuilder let content: (Image) -> Content
